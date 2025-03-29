@@ -14,17 +14,22 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
-            <div>
-                <a href="/" wire:navigate>
-                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-                </a>
+    <body class="bg-[#FAF3EC] min-h-screen flex flex-col items-center justify-center p-4 antialiased">
+{{--    class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-[#FAF3EC]"--}}
+        <div class="w-full max-w-md bg-white rounded-3xl px-8 py-20 bg-[#FAF3EC] px-8 py-20">
+
+            <div id="logo" class="flex gap-x-3 items-center justify-center mb-10">
+                <svg class="size-10" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 0C7.16345 0 0 7.16345 0 16H16V0Z" fill="#D8443A"/>
+                    <path d="M16 32C24.8366 32 32 24.8366 32 16L16 16L16 32Z" fill="#DF6D44"/>
+                    <path d="M16 0C24.8366 0 32 7.16345 32 16H16V0Z" fill="#E9DDCD"/>
+                    <path d="M16 32C7.16345 32 -5.81462e-07 24.8366 -1.29873e-06 16L16 16L16 32Z" fill="#383435"/>
+                </svg>
+
+                <span class="font-semibold text-4xl text-[#383435]" id="logo-text">escape</span>
             </div>
 
-            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
-                {{ $slot }}
-            </div>
+            {{ $slot }}
         </div>
     </body>
 </html>

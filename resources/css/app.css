@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.content {
+    margin-left: 200px;
+    transition: all 0.3s;
+}
+
+@media (max-width: 640px) {
+    .content {
+        margin-left: 70px;
+    }
+}
