@@ -1,5 +1,40 @@
-<div class="h-full w-full xl:w-4/5">
-    <div id="column-chart"></div>
+<div class="flex flex-col xl:flex-row gap-y-10 gap-x-10 2xl:gap-x-20">
+
+
+    <div class="h-full w-full xl:w-4/5">
+        <div id="column-chart"></div>
+    </div>
+
+
+    <div class="w-full xl:w-1/5">
+
+        <div class="flex flex-wrap gap-x-5 gap-y-3 mb-10">
+            <button autofocus class="py-1 px-7 rounded-3xl border-2 border-[#383435] focus:outline-[#383435] focus:bg-[#383435] hover:bg-[#383435]
+                         focus:text-white hover:text-white transition duration-600">Месяц</button>
+            <button class="py-1 px-7 rounded-3xl border-2 border-[#383435] focus:bg-[#383435] hover:bg-[#383435]
+                         focus:text-white hover:text-white transition duration-600">Квартал</button>
+            <button class="py-1 px-7 rounded-3xl border-2 border-[#383435] focus:bg-[#383435] hover:bg-[#383435]
+                         focus:text-white hover:text-white transition duration-600">Год</button>
+        </div>
+
+        <div class="">
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="size-5 bg-[#D8443A] rounded-full mr-2"></div>
+                    <span>Переход в Горячие</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="size-5 bg-[#DF6D44] rounded-full mr-2"></div>
+                    <span>Переход в Теплые</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="size-5 bg-[#98857E] rounded-full mr-2"></div>
+                    <span>Переход в Холодные</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     @script
     <script>

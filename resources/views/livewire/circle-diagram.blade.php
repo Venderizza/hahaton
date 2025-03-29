@@ -1,5 +1,14 @@
 <div>
 
+    <div class="flex-col sm:flex-row flex gap-x-5 gap-y-3">
+        <button autofocus class="py-1 px-7 rounded-3xl border-2 border-[#383435] focus:outline-[#383435] focus:bg-[#383435] hover:bg-[#383435]
+                         focus:text-white hover:text-white transition duration-600">Месяц</button>
+        <button class="py-1 px-7 rounded-3xl border-2 border-[#383435] focus:bg-[#383435] hover:bg-[#383435]
+                         focus:text-white hover:text-white transition duration-600">Квартал</button>
+        <button class="py-1 px-7 rounded-3xl border-2 border-[#383435] focus:bg-[#383435] hover:bg-[#383435]
+                         focus:text-white hover:text-white transition duration-600">Год</button>
+    </div>
+
     <!-- Line Chart -->
     <div class="py-6" id="pie-chart"></div>
 
@@ -35,15 +44,13 @@
                 dataLabels: {
                     enabled: true,
                     style: {
-                        width: '50px',
-                        height: '50px',
+                        cssClass: 'w-[50px] h-[50px]',
                         fontFamily: "Inter, sans-serif",
                     },
                 },
                 legend: {
                     style: {
-                        width: '50px',
-                        height: '50px',
+                        cssClass: 'w-[50px] h-[50px]',
                     },
                     position: "right",
                     fontFamily: "Inter, sans-serif",

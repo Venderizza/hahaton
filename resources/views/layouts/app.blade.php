@@ -14,6 +14,7 @@
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
+
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
@@ -33,6 +34,9 @@
 
         </div>
 
-
+        <script>
+            let graph = document.getElementById("line-chart");
+            graph.style.height = "300px";
+        </script>
     </body>
 </html>

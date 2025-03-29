@@ -5,6 +5,7 @@
     @script
     <script>
 
+
         const options = {
             chart: {
                 height: "100%",
