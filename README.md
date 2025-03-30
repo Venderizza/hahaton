@@ -4,10 +4,12 @@
 1. Склонировать проект
 2. Заполнить env под себя
 3. Выполнить команды
-> composer install
-> npm i
-> php artisan migrate
-> php artisan db:seed --class=InitSeeder
+```
+composer install
+npm i
+php artisan migrate
+php artisan db:seed --class=InitSeeder
+```
 
 ## Функционал
 
