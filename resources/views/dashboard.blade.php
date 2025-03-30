@@ -11,22 +11,22 @@
             <!-- Горячие -->
             <div class="bg-[#D8443A] text-white p-4 rounded-2xl">
                 <div class="text-white font-medium">Горячие</div>
-                <div class="text-5xl font-bold my-2">107</div>
-                <div class="text-2xl">2%</div>
+                <div class="text-5xl font-bold my-2">{{\App\Services\LeadService::getCountByType(1)}}</div>
+                <div class="text-2xl">{{\App\Services\LeadService::calcPercentGrow(1)}}%</div>
             </div>
 
             <!-- Теплые -->
             <div class="bg-[#DF6D44] text-white p-4 rounded-2xl">
                 <div class="font-medium">Теплые</div>
-                <div class="text-5xl font-bold my-2">34</div>
-                <div class="text-2xl">15%</div>
+                <div class="text-5xl font-bold my-2">{{\App\Services\LeadService::getCountByType(2)}}</div>
+                <div class="text-2xl">{{\App\Services\LeadService::calcPercentGrow(2)}}%</div>
             </div>
 
             <!-- Холодные -->
             <div class="bg-[#98857E] text-white p-4 rounded-2xl">
                 <div class="font-medium">Холодные</div>
-                <div class="text-5xl font-bold my-2">127</div>
-                <div class="text-2xl">89%</div>
+                <div class="text-5xl font-bold my-2">{{\App\Services\LeadService::getCountByType(3)}}</div>
+                <div class="text-2xl">{{\App\Services\LeadService::calcPercentGrow(3)}}%</div>
             </div>
         </div>
     </div>
@@ -35,15 +35,15 @@
     <div class="content bg-[#E9DDCD] rounded-3xl shadow p-6 mb-8">
         <h2 class="text-2xl font-semibold mb-4 text-[#383435]">Закрытые заявки</h2>
 
-        <div class="flex flex-col xl:flex-row xl:gap-20 justify-between w-full">
+{{--        <div class="flex flex-col xl:flex-row xl:gap-20 justify-between w-full">--}}
 
             <livewire:line-chart/>
 
-            <div class="w-full xl:w-1/2 mt-10 xl:mt-[-30px] flex flex-col gap-y-10">
-                <livewire:circle-diagram/>
-            </div>
+{{--            <div class="w-full xl:w-1/2 mt-10 xl:mt-[-30px] flex flex-col gap-y-10">--}}
+{{--                <livewire:circle-diagram/>--}}
+{{--            </div>--}}
 
-        </div>
+{{--        </div>--}}
     </div>
 
     <!-- Динамика заявок -->

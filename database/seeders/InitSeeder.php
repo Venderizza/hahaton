@@ -14,6 +14,7 @@ class InitSeeder extends Seeder
     {
        $this->call([
            StatusSeeder::class,
+           LeadSeeder::class,
        ]);
     }
 }

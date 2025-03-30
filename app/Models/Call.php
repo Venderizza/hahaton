@@ -13,5 +13,12 @@ class Call extends Model
         'lead_id',
         'status_id',
         'path',
+
+        'created_at',
+        'updated_at',
     ];
+
+    public function lead(){
+        return $this->belongsTo(Lead::class);
+    }
 }
