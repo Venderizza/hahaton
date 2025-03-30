@@ -14,6 +14,17 @@ class Lead extends Model
         'phone',
         'status_id',
         'external_id',
-        'result'
+        'result',
+        'created_at',
+        'updated_at',
     ];
+
+
+    public function status(){
+        return $this->belongsTo(Status::class);
+    }
+
+    public function calls(){
+        return $this->hasMany(Call::class);
+    }
 }

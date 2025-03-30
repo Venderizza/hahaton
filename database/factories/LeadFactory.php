@@ -15,13 +15,15 @@ class LeadFactory extends Factory
      * @return array<string, mixed>
      */
     public function definition(): array
-    {
+    {   $date = $this->faker->dateTimeBetween('-1 year', 'now');
         return [
             'name' => $this->faker->name(),
             'phone' => $this->faker->unique()->numerify('###########'),
             'status_id' => $this->faker->randomElement([1,2,3]),
             'external_id' => $this->faker->uuid(),
             'result'=>$this->faker->boolean('40'),
+            'created_at'=>$date,
+            'updated_at'=>$date,
         ];
     }
 }
